@@ -6,3 +6,9 @@ spring:
           # El decoder se crea de forma diferida: con estos valores no se sale a la red
           issuer-uri: https://snippet-searcher.test/
           audiences: https://snippet-searcher.test/api
+
+# Readable logs in the test output, and no extra port for /prometheus
+logging:
+  console-format: plain
+observability:
+  metrics-port: 0
